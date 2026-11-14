@@ -1,0 +1,11 @@
+# Dados locais gerados pelo uso (nunca publicar)
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep
+!reports/RELATORIO-DIAGNOSTICO.md
+data/historico.json
+data/historico.tmp
+data/python.txt
+__pycache__/
+*.pyc

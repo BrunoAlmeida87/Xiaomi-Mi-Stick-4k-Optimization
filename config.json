@@ -1,0 +1,8 @@
+{
+  "ip": "",
+  "port": 5555,
+  "auto_reconnect": true,
+  "adb_path": "",
+  "scrcpy_path": "",
+  "scrcpy_args": ["--max-size=1280", "--max-fps=30", "--video-bit-rate=4M"]
+}

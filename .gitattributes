@@ -1,0 +1,3 @@
+# Arquivos .bat precisam de quebras de linha do Windows (CRLF); guardar exatamente como estao.
+*.bat -text
+*.png binary

@@ -1,0 +1,31 @@
+# Trecho real de 'dumpsys meminfo' do Mi TV Stick 4K (Android 11, firmware 25.9.9.1546)
+Applications Memory Usage (in Kilobytes):
+Uptime: 2210311 Realtime: 2210311
+
+
+Total RSS by process:
+    338,608K: com.google.android.tvlauncher (pid 1446 / activities)
+    244,216K: system (pid 557)
+    220,052K: com.google.android.gms (pid 1080)
+    215,872K: com.mitv.dream (pid 4785)
+    167,928K: com.google.android.tvrecommendations (pid 1456)
+    166,644K: com.android.vending (pid 2724)
+
+Total RSS by OOM adjustment:
+    446,644K: Native
+
+Total PSS by process:
+    253,795K: com.google.android.tvlauncher (pid 1446 / activities)
+    114,963K: system (pid 557)
+    102,071K: com.google.android.gms (pid 1080)
+     96,211K: com.mitv.dream (pid 4785)
+     59,052K: ch.protonvpn.android (pid 4544)
+     54,837K: com.android.vending (pid 2724)
+     51,144K: com.android.tv.settings (pid 887 / activities)
+     50,054K: com.google.android.katniss:interactor (pid 1270)
+     49,006K: com.google.android.tvrecommendations (pid 1456)
+     45,310K: com.netflix.ninja (pid 2541)
+     39,929K: com.google.android.katniss:search (pid 4360)
+Total PSS by category:
+    267,853K: Native
+    196,612K: GL mtrack

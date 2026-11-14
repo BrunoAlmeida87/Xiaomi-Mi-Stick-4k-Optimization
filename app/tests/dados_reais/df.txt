@@ -1,0 +1,30 @@
+# adb shell df -h; echo; df
+Filesystem          Size  Used Avail Use% Mounted on
+tmpfs               995M  868K  994M   1% /dev
+tmpfs               995M     0  995M   0% /mnt
+/dev/block/metadata  11M  144K   11M   2% /metadata
+/dev/block/dm-6     673M  671M     0 100% /
+/dev/block/dm-7      94M   94M     0 100% /system_ext
+/dev/block/dm-8     111M  111M     0 100% /vendor
+/dev/block/dm-9     679M  677M     0 100% /product
+/dev/block/dm-10    8.0M  8.0M     0 100% /odm
+/dev/block/dm-11     24M   24K   23M   1% /oem
+tmpfs               995M     0  995M   0% /apex
+tmpfs               995M  3.8M  991M   1% /odm/lib/ms12
+/dev/block/dm-12    4.8G  4.0G  686M  86% /data
+/dev/fuse           4.8G  4.0G  686M  86% /storage/emulated
+
+Filesystem          1K-blocks    Used Available Use% Mounted on
+tmpfs                 1019012     868   1018144   1% /dev
+tmpfs                 1019012       0   1019012   0% /mnt
+/dev/block/metadata     11760     144     11132   2% /metadata
+/dev/block/dm-6        689232  687144         0 100% /
+/dev/block/dm-7         96600   96304         0 100% /system_ext
+/dev/block/dm-8        113712  113340         0 100% /vendor
+/dev/block/dm-9        695336  693252         0 100% /product
+/dev/block/dm-10         8248    8220         0 100% /odm
+/dev/block/dm-11        24688      24     23748   1% /oem
+tmpfs                 1019012       0   1019012   0% /apex
+tmpfs                 1019012    3988   1015024   1% /odm/lib/ms12
+/dev/block/dm-12      5038080 4204252    702756  86% /data
+/dev/fuse             5038080 4204252    702756  86% /storage/emulated

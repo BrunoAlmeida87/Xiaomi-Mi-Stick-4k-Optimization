@@ -1,0 +1,815 @@
+{
+ "_sobre": "Base de explicações. Categorias: Essencial (bloqueado), Opcional (depende do uso), Candidato (pode desativar se não usa), Instalado por você, Desconhecido (não mexer sem pesquisar). 'regras' explica pacotes que não estão listados, pelo começo do nome.",
+ "protegidos_prefixo": [
+  "android",
+  "com.android.systemui",
+  "com.android.settings",
+  "com.android.tv.settings",
+  "com.android.providers.",
+  "com.android.bluetooth",
+  "com.android.wifi",
+  "com.android.networkstack",
+  "com.android.server.",
+  "com.android.shell",
+  "com.android.phone",
+  "com.android.inputdevices",
+  "com.android.keychain",
+  "com.android.packageinstaller",
+  "com.android.permissioncontroller",
+  "com.google.android.permissioncontroller",
+  "com.android.externalstorage",
+  "com.android.media",
+  "com.google.android.media",
+  "com.android.se",
+  "com.android.location",
+  "com.android.certinstaller",
+  "com.android.webview",
+  "com.google.android.webview",
+  "com.android.tv.",
+  "com.google.android.tv.",
+  "com.google.android.gms",
+  "com.google.android.gsf",
+  "com.android.vending",
+  "com.google.android.tvlauncher",
+  "com.google.android.apps.tv.launcherx",
+  "com.google.android.leanbacklauncher",
+  "com.google.android.apps.mediashell",
+  "com.google.android.tungsten.",
+  "com.google.android.tvsetup",
+  "com.google.android.setupwraith",
+  "com.google.android.ext.",
+  "com.google.android.modulemetadata",
+  "com.google.android.networkstack",
+  "com.google.android.packageinstaller",
+  "com.google.android.inputmethod",
+  "com.google.android.tts",
+  "com.droidlogic",
+  "com.amlogic",
+  "com.mediatek",
+  "com.xiaomi.mitv.tvpush",
+  "com.android.dreams",
+  "com.google.android.sss",
+  "com.google.android.configupdater",
+  "com.google.android.onetimeinitializer",
+  "com.google.android.partnersetup",
+  "com.google.android.overlay",
+  "com.android.overlay",
+  "com.android.internal",
+  "com.netflix.",
+  "com.google.android.youtube.tv",
+  "com.google.android.youtube.tvunplugged",
+  "com.amazon.amazonvideo.livingroom",
+  "com.disney.disneyplus",
+  "com.wbd.stream",
+  "com.hbo.",
+  "com.globo.",
+  "com.spotify.tv.android",
+  "tv.pluto.",
+  "com.apple.atve",
+  "xiaomi.tvservice",
+  "com.mi.bluetooth",
+  "com.xiaomi.mitv.updateservice",
+  "com.xiaomi.android.tvsetup.",
+  "com.android.vpndialogs",
+  "com.google.process.gservices"
+ ],
+ "pacotes": {
+  "android": {
+   "cat": "Essencial",
+   "nome": "Sistema Android (núcleo)",
+   "funcao": "O próprio sistema operacional.",
+   "efeito": "A TV não funcionaria.",
+   "impacto": "-"
+  },
+  "com.android.systemui": {
+   "cat": "Essencial",
+   "nome": "Interface do sistema",
+   "funcao": "Mostra avisos, barra de volume e janelas do sistema na tela.",
+   "efeito": "A TV ficaria inutilizável.",
+   "impacto": "-"
+  },
+  "com.android.tv.settings": {
+   "cat": "Essencial",
+   "nome": "Configurações da TV",
+   "funcao": "O menu de Configurações (engrenagem).",
+   "efeito": "Você perderia acesso às configurações.",
+   "impacto": "-"
+  },
+  "com.android.settings.intelligence": {
+   "cat": "Essencial",
+   "nome": "Busca nas Configurações",
+   "funcao": "Permite pesquisar opções dentro do menu Configurações.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.bluetooth": {
+   "cat": "Essencial",
+   "nome": "Bluetooth",
+   "funcao": "Liga o controle remoto e outros acessórios sem fio.",
+   "efeito": "O controle remoto pararia de funcionar.",
+   "impacto": "-"
+  },
+  "com.android.providers.tv": {
+   "cat": "Essencial",
+   "nome": "Canais da tela inicial",
+   "funcao": "Guarda os canais e programas que aparecem nas linhas da tela inicial.",
+   "efeito": "A tela inicial ficaria vazia ou com erros.",
+   "impacto": "-"
+  },
+  "com.android.providers.media": {
+   "cat": "Essencial",
+   "nome": "Biblioteca de mídia",
+   "funcao": "Organiza fotos, vídeos e músicas guardados no aparelho ou pendrive.",
+   "efeito": "Apps não achariam arquivos de mídia.",
+   "impacto": "-"
+  },
+  "com.android.providers.media.module": {
+   "cat": "Essencial",
+   "nome": "Biblioteca de mídia",
+   "funcao": "Organiza fotos, vídeos e músicas guardados no aparelho ou pendrive.",
+   "efeito": "Apps não achariam arquivos de mídia.",
+   "impacto": "-"
+  },
+  "com.android.providers.downloads": {
+   "cat": "Essencial",
+   "nome": "Gerenciador de downloads",
+   "funcao": "Baixa arquivos para os apps (inclusive atualizações).",
+   "efeito": "Downloads e atualizações falhariam.",
+   "impacto": "-"
+  },
+  "com.android.providers.settings": {
+   "cat": "Essencial",
+   "nome": "Armazenamento das configurações",
+   "funcao": "Guarda todas as configurações do sistema.",
+   "efeito": "O sistema não funcionaria.",
+   "impacto": "-"
+  },
+  "com.android.externalstorage": {
+   "cat": "Essencial",
+   "nome": "Acesso a pendrive / HD externo",
+   "funcao": "Permite ler pendrives e HDs ligados na TV.",
+   "efeito": "Pendrives deixariam de funcionar.",
+   "impacto": "-"
+  },
+  "com.android.shell": {
+   "cat": "Essencial",
+   "nome": "Shell do sistema",
+   "funcao": "Usado pelo ADB, inclusive por este programa.",
+   "efeito": "Este programa deixaria de funcionar.",
+   "impacto": "-"
+  },
+  "com.android.packageinstaller": {
+   "cat": "Essencial",
+   "nome": "Instalador de apps",
+   "funcao": "Instala e atualiza aplicativos.",
+   "efeito": "Não seria possível instalar/atualizar apps.",
+   "impacto": "-"
+  },
+  "com.google.android.packageinstaller": {
+   "cat": "Essencial",
+   "nome": "Instalador de apps",
+   "funcao": "Instala e atualiza aplicativos.",
+   "efeito": "Não seria possível instalar/atualizar apps.",
+   "impacto": "-"
+  },
+  "com.android.permissioncontroller": {
+   "cat": "Essencial",
+   "nome": "Controle de permissões",
+   "funcao": "Pergunta e guarda as permissões dos apps.",
+   "efeito": "Apps poderiam parar de funcionar.",
+   "impacto": "-"
+  },
+  "com.google.android.permissioncontroller": {
+   "cat": "Essencial",
+   "nome": "Controle de permissões",
+   "funcao": "Pergunta e guarda as permissões dos apps.",
+   "efeito": "Apps poderiam parar de funcionar.",
+   "impacto": "-"
+  },
+  "com.android.inputdevices": {
+   "cat": "Essencial",
+   "nome": "Teclados e controles",
+   "funcao": "Define o layout de teclados e controles conectados.",
+   "efeito": "Teclas poderiam funcionar errado.",
+   "impacto": "-"
+  },
+  "com.android.keychain": {
+   "cat": "Essencial",
+   "nome": "Certificados de segurança",
+   "funcao": "Guarda certificados usados em conexões seguras.",
+   "efeito": "Logins e conexões seguras poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.android.certinstaller": {
+   "cat": "Essencial",
+   "nome": "Instalador de certificados",
+   "funcao": "Instala certificados de segurança.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.se": {
+   "cat": "Essencial",
+   "nome": "Elemento seguro",
+   "funcao": "Guarda chaves de segurança do sistema.",
+   "efeito": "Recursos de segurança poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.android.location.fused": {
+   "cat": "Essencial",
+   "nome": "Localização do sistema",
+   "funcao": "Informa a região aproximada para apps (ex.: catálogo do país).",
+   "efeito": "Apps poderiam mostrar conteúdo da região errada.",
+   "impacto": "-"
+  },
+  "com.android.networkstack": {
+   "cat": "Essencial",
+   "nome": "Pilha de rede",
+   "funcao": "Faz a conexão de rede funcionar.",
+   "efeito": "A TV perderia a internet.",
+   "impacto": "-"
+  },
+  "com.google.android.networkstack": {
+   "cat": "Essencial",
+   "nome": "Pilha de rede",
+   "funcao": "Faz a conexão de rede funcionar.",
+   "efeito": "A TV perderia a internet.",
+   "impacto": "-"
+  },
+  "com.android.wifi.resources": {
+   "cat": "Essencial",
+   "nome": "Recursos do Wi-Fi",
+   "funcao": "Configurações internas do Wi-Fi.",
+   "efeito": "O Wi-Fi poderia falhar.",
+   "impacto": "-"
+  },
+  "com.android.webview": {
+   "cat": "Essencial",
+   "nome": "WebView",
+   "funcao": "Mostra páginas da internet dentro de apps (logins, termos).",
+   "efeito": "Telas de login de vários apps quebrariam.",
+   "impacto": "-"
+  },
+  "com.google.android.webview": {
+   "cat": "Essencial",
+   "nome": "WebView",
+   "funcao": "Mostra páginas da internet dentro de apps (logins, termos).",
+   "efeito": "Telas de login de vários apps quebrariam.",
+   "impacto": "-"
+  },
+  "com.android.vpndialogs": {
+   "cat": "Essencial",
+   "nome": "Avisos de VPN",
+   "funcao": "Necessário para apps de VPN, como o ProtonVPN.",
+   "efeito": "O ProtonVPN deixaria de funcionar.",
+   "impacto": "-"
+  },
+  "com.android.proxyhandler": {
+   "cat": "Essencial",
+   "nome": "Proxy de rede",
+   "funcao": "Suporte a proxy de internet.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.documentsui": {
+   "cat": "Essencial",
+   "nome": "Seletor de arquivos",
+   "funcao": "Janela para escolher arquivos dentro de apps.",
+   "efeito": "Apps não conseguiriam abrir arquivos.",
+   "impacto": "-"
+  },
+  "com.android.mtp": {
+   "cat": "Essencial",
+   "nome": "Transferência USB",
+   "funcao": "Troca de arquivos pelo cabo USB.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.companiondevicemanager": {
+   "cat": "Essencial",
+   "nome": "Pareamento de acessórios",
+   "funcao": "Ajuda a parear acessórios.",
+   "efeito": "Pareamentos poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.android.statementservice": {
+   "cat": "Essencial",
+   "nome": "Verificação de links",
+   "funcao": "Decide qual app abre cada link.",
+   "efeito": "Links poderiam abrir no app errado.",
+   "impacto": "-"
+  },
+  "com.android.localtransport": {
+   "cat": "Essencial",
+   "nome": "Backup local",
+   "funcao": "Parte do sistema de backup.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.backupconfirm": {
+   "cat": "Essencial",
+   "nome": "Confirmação de backup",
+   "funcao": "Janela de confirmação de backup/restauração.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.sharedstoragebackup": {
+   "cat": "Essencial",
+   "nome": "Backup de armazenamento",
+   "funcao": "Parte do sistema de backup.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.wallpaperbackup": {
+   "cat": "Essencial",
+   "nome": "Backup do papel de parede",
+   "funcao": "Guarda o fundo de tela em backups.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.cts.priv.ctsshim": {
+   "cat": "Essencial",
+   "nome": "Componente de compatibilidade",
+   "funcao": "Peça técnica exigida pelo Google; fica inativa.",
+   "efeito": "Sem ganho; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.cts.ctsshim": {
+   "cat": "Essencial",
+   "nome": "Componente de compatibilidade",
+   "funcao": "Peça técnica exigida pelo Google; fica inativa.",
+   "efeito": "Sem ganho; mantenha.",
+   "impacto": "-"
+  },
+  "com.android.dreams.basic": {
+   "cat": "Essencial",
+   "nome": "Protetor de tela básico",
+   "funcao": "Protetor de tela padrão do Android.",
+   "efeito": "A TV poderia ficar sem protetor de tela.",
+   "impacto": "-"
+  },
+  "com.android.printspooler": {
+   "cat": "Candidato",
+   "nome": "Serviço de impressão",
+   "funcao": "Imprimir documentos — algo que não se faz na TV.",
+   "efeito": "Nada perceptível.",
+   "impacto": "Muito baixo"
+  },
+  "com.android.egg": {
+   "cat": "Candidato",
+   "nome": "Curiosidade do Android (easter egg)",
+   "funcao": "Brincadeira escondida nas versões do Android.",
+   "efeito": "Nada perceptível.",
+   "impacto": "Nulo"
+  },
+  "com.android.traceur": {
+   "cat": "Opcional",
+   "nome": "Gravação de desempenho",
+   "funcao": "Ferramenta de desenvolvedor para medir desempenho.",
+   "efeito": "Nada perceptível para uso normal.",
+   "impacto": "Nulo quando parado"
+  },
+  "com.android.musicfx": {
+   "cat": "Opcional",
+   "nome": "Equalizador de áudio",
+   "funcao": "Efeitos de som usados por alguns apps de música.",
+   "efeito": "Alguns apps podem perder o equalizador.",
+   "impacto": "Baixo"
+  },
+  "com.google.android.gms": {
+   "cat": "Essencial",
+   "nome": "Google Play Services",
+   "funcao": "Conta Google, proteção de vídeo (DRM), Chromecast e atualizações.",
+   "efeito": "Netflix, YouTube e login parariam.",
+   "impacto": "Alto, mas necessário"
+  },
+  "com.google.android.gsf": {
+   "cat": "Essencial",
+   "nome": "Serviços do Google (conta)",
+   "funcao": "Liga a TV à sua conta Google.",
+   "efeito": "Apps do Google e a Play Store parariam.",
+   "impacto": "-"
+  },
+  "com.android.vending": {
+   "cat": "Essencial",
+   "nome": "Play Store",
+   "funcao": "Loja de apps; também atualiza Netflix, YouTube etc.",
+   "efeito": "Seus apps deixariam de ser atualizados.",
+   "impacto": "-"
+  },
+  "com.google.android.tvlauncher": {
+   "cat": "Essencial",
+   "nome": "Tela inicial do Google",
+   "funcao": "A tela principal da TV, com as linhas de apps e canais.",
+   "efeito": "A TV ficaria sem tela inicial.",
+   "impacto": "Alto (~250 MB), mas necessário"
+  },
+  "com.google.android.apps.tv.launcherx": {
+   "cat": "Essencial",
+   "nome": "Tela inicial do Google TV",
+   "funcao": "A tela principal (firmwares mais novos).",
+   "efeito": "A TV ficaria sem tela inicial.",
+   "impacto": "-"
+  },
+  "com.google.android.apps.mediashell": {
+   "cat": "Essencial",
+   "nome": "Chromecast integrado",
+   "funcao": "Permite transmitir do celular para a TV.",
+   "efeito": "Você perderia o Chromecast.",
+   "impacto": "-"
+  },
+  "com.google.android.tv.remote.service": {
+   "cat": "Essencial",
+   "nome": "Controle pelo celular",
+   "funcao": "Permite usar o app Google TV do celular como controle.",
+   "efeito": "O celular não controlaria mais a TV.",
+   "impacto": "-"
+  },
+  "com.google.android.katniss": {
+   "cat": "Opcional",
+   "nome": "Assistente de voz do Google",
+   "funcao": "Botão de voz do controle, Google Assistente e busca por voz.",
+   "efeito": "O botão de voz e a busca da tela inicial param; a busca digitada dentro dos apps continua.",
+   "impacto": "Médio (~88 MB medido)"
+  },
+  "com.google.android.tvrecommendations": {
+   "cat": "Opcional",
+   "nome": "Recomendações da tela inicial",
+   "funcao": "Preenche as linhas de sugestões na tela inicial.",
+   "efeito": "Algumas linhas da tela inicial podem ficar vazias.",
+   "impacto": "Médio (~48 MB medido)"
+  },
+  "com.google.android.backdrop": {
+   "cat": "Candidato",
+   "nome": "Modo ambiente (fotos no descanso)",
+   "funcao": "Mostra fotos e informações quando a TV fica parada.",
+   "efeito": "O descanso de tela volta ao básico.",
+   "impacto": "Baixo-médio"
+  },
+  "com.google.android.play.games": {
+   "cat": "Candidato",
+   "nome": "Google Play Games",
+   "funcao": "Conquistas e jogos do Google.",
+   "efeito": "Só afeta quem joga.",
+   "impacto": "Baixo-médio"
+  },
+  "com.google.android.videos": {
+   "cat": "Candidato",
+   "nome": "Google TV / Play Filmes",
+   "funcao": "Loja de filmes do Google.",
+   "efeito": "Você perde acesso a filmes comprados no Google.",
+   "impacto": "Médio (~32 MB medido)"
+  },
+  "com.google.android.youtube.tv": {
+   "cat": "Essencial",
+   "nome": "YouTube",
+   "funcao": "App do YouTube.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "com.google.android.youtube.tvmusic": {
+   "cat": "Candidato",
+   "nome": "YouTube Music",
+   "funcao": "App de música do YouTube.",
+   "efeito": "Só afeta quem usa (o YouTube normal continua).",
+   "impacto": "Baixo"
+  },
+  "com.google.android.youtube.tvkids": {
+   "cat": "Opcional",
+   "nome": "YouTube Kids",
+   "funcao": "YouTube para crianças.",
+   "efeito": "Só afeta quem usa.",
+   "impacto": "Baixo"
+  },
+  "com.google.android.music": {
+   "cat": "Candidato",
+   "nome": "Google Play Música (descontinuado)",
+   "funcao": "Serviço de música que o Google encerrou.",
+   "efeito": "Nada perceptível.",
+   "impacto": "Baixo"
+  },
+  "com.google.android.inputmethod.latin": {
+   "cat": "Essencial",
+   "nome": "Teclado na tela (Gboard)",
+   "funcao": "Teclado que aparece para digitar senhas e buscas.",
+   "efeito": "Você não conseguiria digitar.",
+   "impacto": "-"
+  },
+  "com.google.android.tts": {
+   "cat": "Essencial",
+   "nome": "Voz do sistema",
+   "funcao": "Converte texto em fala (acessibilidade).",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.google.android.marvin.talkback": {
+   "cat": "Opcional",
+   "nome": "TalkBack (leitor de tela)",
+   "funcao": "Lê a tela em voz alta, para acessibilidade.",
+   "efeito": "Só afeta quem precisa de acessibilidade.",
+   "impacto": "Nulo quando desligado"
+  },
+  "com.google.android.tungsten.setupwraith": {
+   "cat": "Essencial",
+   "nome": "Assistente de configuração inicial",
+   "funcao": "Aparece quando a TV é configurada pela primeira vez.",
+   "efeito": "Configurações e atualizações podem falhar; mantenha.",
+   "impacto": "-"
+  },
+  "com.google.android.ext.services": {
+   "cat": "Essencial",
+   "nome": "Serviços internos do Android",
+   "funcao": "Funções internas do sistema (notificações, etc.).",
+   "efeito": "O sistema poderia falhar.",
+   "impacto": "-"
+  },
+  "com.google.android.ext.shared": {
+   "cat": "Essencial",
+   "nome": "Bibliotecas compartilhadas",
+   "funcao": "Código usado por vários apps.",
+   "efeito": "Apps poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.google.android.configupdater": {
+   "cat": "Essencial",
+   "nome": "Atualizador de segurança",
+   "funcao": "Atualiza listas de segurança do sistema.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.google.android.feedback": {
+   "cat": "Opcional",
+   "nome": "Envio de feedback",
+   "funcao": "Envia relatórios de problemas ao Google.",
+   "efeito": "Nada perceptível.",
+   "impacto": "Muito baixo"
+  },
+  "com.google.android.tv.bugreportsender": {
+   "cat": "Opcional",
+   "nome": "Envio de relatórios de erro",
+   "funcao": "Envia relatórios de erro ao Google.",
+   "efeito": "Nada perceptível.",
+   "impacto": "Muito baixo"
+  },
+  "com.google.android.speech.pumpkin": {
+   "cat": "Opcional",
+   "nome": "Comandos de voz offline",
+   "funcao": "Reconhece comandos de voz sem internet.",
+   "efeito": "Pode afetar comandos de voz.",
+   "impacto": "Baixo"
+  },
+  "com.google.android.partnersetup": {
+   "cat": "Essencial",
+   "nome": "Configuração de parceiro",
+   "funcao": "Ajustes do fabricante no primeiro uso.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.google.android.onetimeinitializer": {
+   "cat": "Essencial",
+   "nome": "Inicialização única",
+   "funcao": "Roda só na primeira vez que a TV liga.",
+   "efeito": "Sem ganho real; mantenha.",
+   "impacto": "-"
+  },
+  "com.google.android.modulemetadata": {
+   "cat": "Essencial",
+   "nome": "Dados dos módulos do sistema",
+   "funcao": "Informações sobre as atualizações do sistema.",
+   "efeito": "Atualizações poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.google.process.gservices": {
+   "cat": "Essencial",
+   "nome": "Serviços do Google",
+   "funcao": "Processo dos serviços do Google.",
+   "efeito": "Apps do Google parariam.",
+   "impacto": "-"
+  },
+  "com.netflix.ninja": {
+   "cat": "Essencial",
+   "nome": "Netflix",
+   "funcao": "App da Netflix.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "com.amazon.amazonvideo.livingroom": {
+   "cat": "Essencial",
+   "nome": "Prime Video",
+   "funcao": "App do Prime Video.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "com.disney.disneyplus": {
+   "cat": "Essencial",
+   "nome": "Disney+",
+   "funcao": "App do Disney+.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "com.wbd.stream": {
+   "cat": "Essencial",
+   "nome": "Max",
+   "funcao": "App do Max.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "com.globo.globotv": {
+   "cat": "Essencial",
+   "nome": "Globoplay",
+   "funcao": "App do Globoplay.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "com.spotify.tv.android": {
+   "cat": "Essencial",
+   "nome": "Spotify",
+   "funcao": "App do Spotify.",
+   "efeito": "Protegido (streaming).",
+   "impacto": "-"
+  },
+  "ch.protonvpn.android": {
+   "cat": "Opcional",
+   "nome": "ProtonVPN",
+   "funcao": "VPN instalada por você.",
+   "efeito": "A VPN some até ser reativada. Você usa: manter.",
+   "impacto": "~58 MB medido"
+  },
+  "com.mi.bluetooth": {
+   "cat": "Essencial",
+   "nome": "Bluetooth da Xiaomi",
+   "funcao": "Liga o controle remoto Xiaomi (inclusive o botão de ligar).",
+   "efeito": "O controle remoto poderia parar.",
+   "impacto": "-"
+  },
+  "xiaomi.tvservice": {
+   "cat": "Essencial",
+   "nome": "Serviço de TV da Xiaomi",
+   "funcao": "Funções de sistema da Xiaomi para a TV.",
+   "efeito": "Funções do aparelho poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.xiaomi.android.tvsetup.partnercustomizer": {
+   "cat": "Essencial",
+   "nome": "Personalização da Xiaomi",
+   "funcao": "Ajustes do fabricante (fica sempre ativo).",
+   "efeito": "Funções do aparelho poderiam falhar.",
+   "impacto": "-"
+  },
+  "com.xiaomi.mitv.updateservice": {
+   "cat": "Essencial",
+   "nome": "Atualizações do sistema (Xiaomi)",
+   "funcao": "Baixa atualizações de sistema e de segurança.",
+   "efeito": "Você deixaria de receber atualizações de segurança.",
+   "impacto": "-"
+  },
+  "com.mitv.tvhome.atv": {
+   "cat": "Opcional",
+   "nome": "PatchWall (Xiaomi)",
+   "funcao": "Interface de conteúdo da Xiaomi. Você não usa.",
+   "efeito": "Atalhos do PatchWall (e o botão dele no controle, se houver) param. O programa bloqueia se for a tela inicial.",
+   "impacto": "~30 MB medido"
+  },
+  "com.mitv.dream": {
+   "cat": "Opcional",
+   "nome": "Protetor de tela da Xiaomi (provável)",
+   "funcao": "'Dream' é como o Android chama o protetor de tela.",
+   "efeito": "O protetor de tela pode mudar; prefira trocá-lo nas Configurações.",
+   "impacto": "~94 MB, mas em cache"
+  },
+  "com.miui.tv.analytics": {
+   "cat": "Candidato",
+   "nome": "Estatísticas de uso da Xiaomi (telemetria)",
+   "funcao": "Coleta e envia dados de uso para a Xiaomi.",
+   "efeito": "Nenhuma função visível muda.",
+   "impacto": "~15 MB sempre ativo"
+  },
+  "com.droidlogic": {
+   "cat": "Essencial",
+   "nome": "Sistema do chip Amlogic",
+   "funcao": "Controla vídeo, HDMI e áudio do processador.",
+   "efeito": "Imagem ou som poderiam parar.",
+   "impacto": "-"
+  },
+  "com.droidlogic.tvinput": {
+   "cat": "Essencial",
+   "nome": "Entradas de vídeo (Amlogic)",
+   "funcao": "Parte do sistema de vídeo do processador.",
+   "efeito": "Imagem poderia falhar.",
+   "impacto": "-"
+  }
+ },
+ "regras": [
+  {
+   "prefixo": "com.google.android.overlay",
+   "nome": "Ajuste do sistema (overlay)",
+   "funcao": "Pequeno ajuste de aparência ou configuração do sistema.",
+   "efeito": "Sem ganho de desempenho; pode quebrar telas.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.android.overlay",
+   "nome": "Ajuste do sistema (overlay)",
+   "funcao": "Pequeno ajuste de aparência ou configuração do sistema.",
+   "efeito": "Sem ganho de desempenho; pode quebrar telas.",
+   "cat": "Essencial"
+  },
+  {
+   "contem": ".overlay",
+   "nome": "Ajuste do sistema (overlay)",
+   "funcao": "Pequeno ajuste de aparência ou configuração do sistema.",
+   "efeito": "Sem ganho de desempenho; pode quebrar telas.",
+   "cat": "Essencial"
+  },
+  {
+   "contem": ".resources",
+   "nome": "Recursos de um componente do sistema",
+   "funcao": "Textos e imagens usados por uma parte do sistema.",
+   "efeito": "Sem ganho de desempenho.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.android.providers.",
+   "nome": "Banco de dados do sistema",
+   "funcao": "Guarda dados usados pelo sistema e pelos apps.",
+   "efeito": "Apps poderiam falhar.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.droidlogic",
+   "nome": "Componente do chip Amlogic",
+   "funcao": "Parte do sistema de vídeo, áudio ou HDMI do processador.",
+   "efeito": "Imagem, som ou HDMI poderiam falhar.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.amlogic",
+   "nome": "Componente do chip Amlogic",
+   "funcao": "Parte do sistema de vídeo, áudio ou HDMI do processador.",
+   "efeito": "Imagem, som ou HDMI poderiam falhar.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.google.android.gms",
+   "nome": "Parte do Google Play Services",
+   "funcao": "Componente dos serviços do Google.",
+   "efeito": "Apps do Google e streaming poderiam falhar.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.google.android.tv.",
+   "nome": "Componente do Android TV (Google)",
+   "funcao": "Parte do sistema Android TV.",
+   "efeito": "Funções da TV poderiam falhar.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.android.tv.",
+   "nome": "Componente do Android TV",
+   "funcao": "Parte do sistema Android TV.",
+   "efeito": "Funções da TV poderiam falhar.",
+   "cat": "Essencial"
+  },
+  {
+   "prefixo": "com.xiaomi.",
+   "nome": "Componente da Xiaomi",
+   "funcao": "Software do fabricante (Xiaomi). Função exata não identificada.",
+   "efeito": "Desconhecido — não mexa sem pesquisar.",
+   "cat": "Desconhecido"
+  },
+  {
+   "prefixo": "com.mitv.",
+   "nome": "Componente Xiaomi Mi TV",
+   "funcao": "Software do fabricante (Xiaomi). Função exata não identificada.",
+   "efeito": "Desconhecido — não mexa sem pesquisar.",
+   "cat": "Desconhecido"
+  },
+  {
+   "prefixo": "com.miui.",
+   "nome": "Componente da Xiaomi (MIUI)",
+   "funcao": "Software do fabricante (Xiaomi). Função exata não identificada.",
+   "efeito": "Desconhecido — não mexa sem pesquisar.",
+   "cat": "Desconhecido"
+  },
+  {
+   "prefixo": "com.mi.",
+   "nome": "Componente da Xiaomi",
+   "funcao": "Software do fabricante (Xiaomi). Função exata não identificada.",
+   "efeito": "Desconhecido — não mexa sem pesquisar.",
+   "cat": "Desconhecido"
+  },
+  {
+   "prefixo": "com.android.",
+   "nome": "Componente do Android",
+   "funcao": "Parte do sistema Android.",
+   "efeito": "Desconhecido — não mexa sem pesquisar.",
+   "cat": "Desconhecido"
+  },
+  {
+   "prefixo": "com.google.",
+   "nome": "Componente do Google",
+   "funcao": "Software do Google instalado de fábrica.",
+   "efeito": "Desconhecido — não mexa sem pesquisar.",
+   "cat": "Desconhecido"
+  }
+ ]
+}
